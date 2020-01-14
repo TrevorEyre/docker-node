@@ -4,6 +4,7 @@ ENV HOME /home/node
 
 # Change directory of global npm packages
 RUN mkdir /home/node/.npm-global
+ENV PREFIX /home/node/.npm-global
 
 # Copy config files to container from Git (.bashrc, .gitconfig, etc)
 RUN rm /home/node/.bashrc
